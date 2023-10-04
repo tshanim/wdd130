@@ -4,7 +4,7 @@
 }
 nav a {
     text-align: center;
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 #hero-msg h1, #hero-msg h4 {
@@ -18,17 +18,17 @@ main section {
 }
 #background {
     height: 725px;
-    background-color:#605f74;
+    background-color:#fb8b24;
 }
 body {
     background-color:#fff;
 }
 header {
-    background-color: #fb8b24;
+    background-color: #5f0f40;
     color: white;
 }
 nav a:hover {
-    background-color: #d10b0b;
+    background-color: #fff;
     color:#080808;
 }
 .book, .join {
@@ -41,7 +41,7 @@ nav a:hover {
     color:white;
 }
 .msg {
-    background-color:#fb8b24;
+    background-color:#9a031e;
 }
 footer {
     background-color: #5f0f40;
