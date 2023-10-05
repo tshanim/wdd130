@@ -18,13 +18,13 @@ main section {
 }
 #background {
     height: 725px;
-    background-color:#fb8b24;
+    background-color:#5f0f40;
 }
 body {
     background-color:#fff;
 }
 header {
-    background-color: #5f0f40;
+    background-color: #9a031e;
     color: white;
 }
 nav a:hover {
@@ -41,10 +41,10 @@ nav a:hover {
     color:white;
 }
 .msg {
-    background-color:#9a031e;
+    background-color:#fb8b24;
 }
 footer {
-    background-color: #5f0f40;
+    background-color: #000000;
     color: burlywood;
 }
 .home-title {
