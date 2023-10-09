@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -70,7 +69,7 @@ nav a:hover {
 }
 .msg h2 {
     color:whitesmoke;
-    font-family: 'Rock Salt', 'Brandley Hand', sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
 }
 .msg p {
     color: white;
