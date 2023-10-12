@@ -37,5 +37,5 @@ $RECYCLE.BIN/
 *.vsix
 
 #personal files to ignore
-challenge/*
-practice/*
+challenge/
+practice/
