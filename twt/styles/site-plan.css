@@ -8,7 +8,8 @@ Fonts are separated by a | */
   --primary-color: #90bede;
   --secondary-color: #eb5e28;
   --accent1-color: #ffefd3;
-  --accent2-color: white;
+  --accent2-color: #26547c;
+  --accent3-color: #8ea604;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Playfair";
@@ -23,7 +24,7 @@ Fonts are separated by a | */
   --nav-link-color: #ffefd3;
   --nav-background-color: #26547c;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #8ea604;
+  --nav-hover-background-color: #90bede;
 }
 
 
@@ -75,8 +76,8 @@ p {
 .colors th {
   background-color: #999;
 }
-.colors td{
-  width: 25%;
+.colors td {
+  width: 20%;
   height: 3em;
 }
 
@@ -91,6 +92,9 @@ p {
 }
 .accent2{
   background-color: var(--accent2-color);
+}
+.accent3 {
+  background-color: var(--accent3-color);
 }
 
 p.colored {
