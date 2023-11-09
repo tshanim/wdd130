@@ -180,6 +180,57 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+#banner {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#banner-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+#banner-img {
+    width: 100%;
+}
+#banner-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#banner-msg h1 {
+    text-align: center;
+}
+.rivers-title {
+    color:#fff;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.rivers-content1 {
+    background-color: #fb8b24;
+    height: 420px;
+    font-size: 18px;
+    text-align: left;
+    padding: 25px;
+    line-height: 1.5em;
+}
+.rivers-content1 h2 p {
+    height: 625px;
+    color:#9a031e;
+}
+.rivers-content2 {
+    display: flex;
+    background-color: #a18cb6;
+}
+.rivers-inga {
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+}
+.rivers-para {
+    padding: 20px;
+    font-size: 18px;
+    text-align: left;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
