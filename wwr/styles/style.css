@@ -190,6 +190,7 @@ footer .social img {
 }
 #banner-img {
     width: 100%;
+    height: 100%;
 }
 #banner-msg {
     grid-column: 2/3;
@@ -208,9 +209,9 @@ footer .social img {
 .rivers-content1 {
     background-color: #fb8b24;
     height: 420px;
-    font-size: 18px;
+    font-size: 22.5px;
     text-align: left;
-    padding: 25px;
+    padding: 35px;
     line-height: 1.5em;
 }
 .rivers-content1 h2 p {
@@ -220,6 +221,7 @@ footer .social img {
 .rivers-content2 {
     display: flex;
     background-color: #a18cb6;
+    padding: 35px;
 }
 .rivers-inga {
     width: 600px;
@@ -228,10 +230,13 @@ footer .social img {
 }
 .rivers-para {
     padding: 20px;
-    font-size: 18px;
+    font-size: 20.5px;
     text-align: left;
 }
-
+.items {
+    padding: .5em 0;
+    line-height: 1.5em;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
