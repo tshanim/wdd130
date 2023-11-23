@@ -180,6 +180,12 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+
+/***************************************************************
+*                                                              *
+*      Rivers Page                                         *
+*                                                              *
+***************************************************************/
 #banner {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
