@@ -244,6 +244,9 @@ footer .social img {
     padding: .5em 0;
     line-height: 1.5em;
 }
+.bold {
+    font-weight: 700;
+}
 
 /***************************************************************
 *                                                              *
