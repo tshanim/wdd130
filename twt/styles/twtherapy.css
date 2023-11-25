@@ -120,15 +120,15 @@ footer .social img {
 *      Our Services Page                                         *
 *                                                              *
 ***************************************************************/
-#hero {
+#hero-div {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 }
-#hero-box {
+#hero-ctnr {
     grid-column: 1/4;
     grid-row: 1/3;
 }
-#hero-img {
+#hero-subimg {
     width: 100%;
     height: 100%;
 }
