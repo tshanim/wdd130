@@ -73,6 +73,7 @@ footer p a:hover {
     padding-top: 15px;
 }
 
+
 /*******************************************************
 *
 *   Homepage
@@ -192,17 +193,17 @@ footer p a:hover {
     gap: 10px 30px;
 }
 .oursvc-sect h2 {
-    grid-column: 1/7;
+    grid-column: 1/8;
     grid-row: 1;
     margin: 20px 0;
     padding-top: 30px;
 }
 .oursvc-sect .para1 {
-    grid-column: 1/7;
+    grid-column: 1/11;
     grid-row: 2/3;
 }
 .oursvc-sect .para2 {
-    grid-column: 1/7;
+    grid-column: 1/11;
     grid-row: 3/4;
 
 }
@@ -224,43 +225,41 @@ footer p a:hover {
     grid-column: 8/10;
     grid-row: 4;
 }
-.oursvc-sect2 {
-    height: 725px;
-    background-color:#5f0f40;
-    grid-column: 1/11;
-    grid-row: 5/9;
-}
+
 .oursvc-img {
+    width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
 }
 .msg-sect {
-    background-color:#fb8b24;
+    background-color:#ffefd380;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
-    grid-row: 7/9;
-    box-shadow: 5px 5px 10px #6f7364;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #8ea604;
 }
 .msg-sect h2 {
-    color:black;
-    font-family: "Roboto", Verdana, sans-serif;
+    color:#26547c;
+    font-family: "Playfair Display", Verdana, sans-serif;
+    text-align: center;
 }
 .msg-sect p {
-    color: black;
-    font-size: .8em;
+    color: #26547e;
+    font-size: 1em;
     padding-bottom: 15px;
+    line-height: 2em;
+    text-align:justify
 }
 .button-box {
     text-align: center;
     
 }
 .learnmore-box {
-    background-color: yellow;
-    color:black;
+    background-color:color(from color srgb r g b);
+    color: #000000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
@@ -275,6 +274,59 @@ footer p a:hover {
 *        About Us Page                                         *
 *                                                              *
 ***************************************************************/
+.abtus-sect {
+    grid-column: 2/10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px 30px;
+}
+.abtus-sect h2 {
+    grid-column: 1/8;
+    grid-row: 1;
+    margin: 20px 0;
+    padding-top: 30px;
+}
+.abtus-sect p {
+    grid-column: 1/11;
+    grid-row: 2/3;
+    line-height: 1.8em;
+}
+.abtus-sect1 {
+    grid-column: 2/10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px 30px;
+}
+.abtus-sect1 h2 {
+    grid-column: 6/11;
+    grid-row: 1;
+    padding-left: 20px;
+    text-align: left;
+}
+.abtus-img {
+    grid-row: 1/4;
+    grid-column: 1/6;
+    width: 100%;
+    height: 500px;
+}
+.abtus-sect1 .abtus-para1 {
+    grid-row: 2;
+    grid-column: 6/11;
+    padding-left: 35px;
+    line-height: 1.8em;
+}
+.emphasis {
+    font-style: italic;
+    color: #8ea604;
+}
+.abtus-sect1 .abtus-para2 {
+    grid-row: 3;
+    grid-column: 1/11;
+    padding-top: 35px;
+    line-height: 1.8em;
+}
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
