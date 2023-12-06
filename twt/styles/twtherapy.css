@@ -423,13 +423,13 @@ footer p a:hover {
 }
 
 .title {
-    color: silver;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .paragraph {
     padding: 35px;
-    color: rebeccapurple;
+    color: red;
 }
 
 button {
