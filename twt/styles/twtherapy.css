@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #ffefd3;
@@ -8,15 +12,35 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
 h2 {
     margin: 0;
     color: #8ea604;
     padding: 5px;
 }
 
-P {
+p {
     line-height: 1.5em;
     font-size: 26px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 #content {
@@ -144,12 +168,6 @@ footer p a:hover {
     grid-row: 2;
     grid-column: 1/6;
     padding-right: 40px;
-}
-
-*,
-::before,
-::after {
-    box-sizing: border-box;
 }
 
 .subimg1 {
@@ -406,7 +424,7 @@ footer p a:hover {
 *                                                              *
 ***************************************************************/
 .card {
-    grid-row: 5/6;
+    grid-row: 4;
     grid-column: 2/10;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 100%;
@@ -432,24 +450,6 @@ footer p a:hover {
     color: red;
 }
 
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-}
 
 /***************************************************************
 *                                                              *
@@ -459,29 +459,29 @@ a {
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: 600px;
     /* Form outline */
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.field-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 0;
 }
-
-form li+li {
-    margin-top: 1em;
+.field-grid legend {
+    margin: 0 2em;
 }
 
 label {
     /* Uniform size & alignment */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
+    grid-column: 1;
+    justify-self: right;
+    padding: 0 10px 0 0;
 }
+
 
 input,
 textarea {
@@ -495,6 +495,7 @@ textarea {
 
     /* Match form field borders */
     border: 1px solid #999;
+    grid-column: 2;
 }
 
 input:focus,
@@ -513,15 +514,11 @@ textarea {
 
 .button {
     /* Align buttons with the text fields */
-    padding-left: 90px;
+    grid-column: 2;
     /* same size as the label elements */
 }
 
-button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
-}
+
 
 #feedback {
     background-color: antiquewhite;
@@ -560,7 +557,7 @@ button {
     background-color: #fefefe;
     margin: 5px auto;
     border: 1px solid #888;
-    width: 400px;
+    width: 600px;
     top: 50%;
     left: 50%;
     position: fixed;
@@ -586,14 +583,15 @@ button {
 .modal-btn {
     border: none;
     outline: 0;
-    display: inline-block;
-    padding: 8px;
+    padding: 25px;
     color: white;
     background-color: #000;
-    text-align: center;
     cursor: pointer;
-    width: 100%;
     font-size: 18px;
+}
+
+.about-hr {
+    grid-column: 1/-1;
 }
 
 

@@ -82,7 +82,7 @@
                 <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="https:linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <a href="https://facebook.com " target="_blank""><i class=" fa fa-facebook"></i></a>
-                <p><a href="#modal1" class="modal-btn">Contact Us</a></p>
+                <button id="myBtn" class="modal-btn">Contact Us</button>
                 <hr>
 
             </div>
@@ -104,7 +104,7 @@
             </div>
         </footer>
     </div>
-    <div id="modal1" class="modal">
+    <div id="myModal" class="modal">
         <form class="modal-content" action="/my-handling-form-page" method="post">
             <a href="#" title="Close" class="close">Close</a>
             <fieldset>
@@ -130,10 +130,39 @@
         </form>
     </div>
     <script>
+        // Get the modal
+        let modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        let btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        let span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.visibility = "visible";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.visibility = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.visibility = "none";
+            }
+        }
+
+    </script>
+    <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
         // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
+
         // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function (e) {
             // stop the form from doing the default action.
@@ -144,7 +173,7 @@
             feedbackElement.style.display = "block";
             // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
-            window.location = window.location.href.slice(-1) == '#';
+            document.getElementsByClassName("modal")[0].style.visibility = "hidden";
         });
     </script>
 </body>
