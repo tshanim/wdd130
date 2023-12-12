@@ -70,9 +70,9 @@
                 alt="A couple receiving a upper back and shoulder massage">
             <img class="sect-img3 card-img" src="images/aboutus-image6.jpeg" alt="A person receiving thigh massage">
             <div class="card">
-                <h2>About Me</h2>
+                <h2 class="aboutme">About Me</h2>
                 <img class="profile" src="images/twt-ceo-founder.png" alt="Brenda Tshani">
-                <h1>Lindiwe B. Tshani</h1>
+                <h1 class="name">Lindiwe B. Tshani</h1>
                 <p class="title">Toucher Wellness Therapy, CEO & Founder</p>
                 <p class="paragraph">I am a licensed massage therapist and the founder of Toucher Wellness Therapy,
                     (PTY) LDT.
@@ -83,7 +83,7 @@
                 <a href="https:linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <a href="https://facebook.com " target="_blank""><i class=" fa fa-facebook"></i></a>
                 <button id="myBtn" class="modal-btn">Contact Us</button>
-                <hr>
+                <hr class="about-hr">
 
             </div>
         </main>
@@ -104,34 +104,33 @@
             </div>
         </footer>
     </div>
-    <div id="myModal" class="modal">
-        <form class="modal-content" action="/my-handling-form-page" method="post">
-            <a href="#" title="Close" class="close">Close</a>
-            <fieldset>
+    <div id="modal1" class="modal">
+        <form class="modal-content" action="/my-handling-form-page"
+            method="post">
+            <span class="close">Close</span>
+            <fieldset class="fielset-grid">
                 <legend>Contact Us</legend>
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" />
-                    </li>
-                    <li>
-                        <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </li>
-                    <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Send your message</button>
-                    </li>
-                </ul>
+                <div class="field-grid">
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="user_name" autocomplete="name">
+                </div>
+                <div class="field-grid">
+                    <label for="mail">E-mail address:</label>
+                    <input type="email" id="mail" name="user_email" autocomplete="email">
+                </div>
+                <div class="field-grid">
+                    <label for="question">Your question?</label>
+                    <textarea id="question" name="user_question" rows="5"></textarea>
+                </div>
+                <button class="modal-btn" id="myBtn">Contact Us</button>
             </fieldset>
+
         </form>
     </div>
     <script>
         // Get the modal
-        let modal = document.getElementById("myModal");
+        let modal = document.getElementById("modal1");
+        let modalDisplay = document.getElementsByClassName("modal")[0];
 
         // Get the button that opens the modal
         let btn = document.getElementById("myBtn");
@@ -141,18 +140,18 @@
 
         // When the user clicks the button, open the modal
         btn.onclick = function () {
-            modal.style.visibility = "visible";
+            modalDisplay.style.visibility = "visible";
         }
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
-            modal.style.visibility = "none";
+            modalDisplay.style.visibility = "hidden";
         }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
             if (event.target == modal) {
-                modal.style.visibility = "none";
+                modalDisplay.style.visibility = "hidden";
             }
         }
 
@@ -165,7 +164,7 @@
 
         // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function (e) {
-            // stop the form from doing the default action.
+            // stop the form from doing the default action
             e.preventDefault();
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
             feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
@@ -174,6 +173,8 @@
             // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
             document.getElementsByClassName("modal")[0].style.visibility = "hidden";
+            window.scroll({ top: 0, behavior: 'smooth' });
+
         });
     </script>
 </body>
